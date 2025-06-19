@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guia completo de reciclagem em Franca-SP, com informações sobre separação de lixo, ecopontos e dicas de sustentabilidade.">
+    <meta name="keywords" content="reciclagem, Franca-SP, ecopontos, sustentabilidade, descarte de resíduos, pontos de coleta, meio ambiente">
+    <meta name="author" content="Guia de Reciclagem para Franca-SP">
+    <meta name="theme-color" content="#4CAF50">
+    <title>Início - Guia de Reciclagem Franca-SP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>    
+    <header>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <nav>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Início</a></li>
+                <li><a href="importancia.html"><i class="fas fa-leaf"></i> Importância</a></li>
+                <li><a href="separar.html"><i class="fas fa-recycle"></i> Como Separar</a></li>
+                <li><a href="descarte-especial.html"><i class="fas fa-trash-alt"></i> Descarte Especial</a></li>
+                <li><a href="ecopontos.html"><i class="fas fa-map-marker-alt"></i> Ecopontos</a></li>
+                <li><a href="dias-coleta.html"><i class="fas fa-calendar-alt"></i> Dias de Coleta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main">
+        <section id="features" aria-labelledby="features-heading">
+            <h2 id="features-heading">
+                <img src="images/logoFrancaVerde.png" alt="Franca+Verde Logo" class="logo-image">
+            </h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3><i class="fas fa-leaf"></i> A Importância da Reciclagem</h3>
+                    <p>Na coleta seletiva, os materiais recicláveis são previamente separados pelos moradores, devidamente acondicionados em sacos plásticos e dispostos na calçada para serem recolhidos pela equipe de Coleta Seletiva nos dias e horários corretos.</p>
+                    <a href="importancia.html" class="feature-link">Saiba mais</a>
+                </div>
+
+                <div class="feature-card">
+                    <h3><i class="fas fa-recycle"></i> Como Separar o Lixo</h3>
+                    <p>É obrigatória a existência de vasilhame apropriado para coleta de lixo, provido de tampa, bem como a sua manutenção em boas condições de utilização e higiene.</p>
+                    <a href="separar.html" class="feature-link">Saiba mais</a>
+                </div>
+
+                <div class="feature-card">
+                    <h3><i class="fas fa-trash-alt"></i> Descarte Especial</h3>
+                    <p>Configura infração ambiental colocar o lixo ou entulho de qualquer natureza nas vias públicas sem estar o material devidamente acondicionado.</p>
+                    <a href="descarte-especial.html" class="feature-link">Saiba mais</a>
+                </div>
+
+                <div class="feature-card">
+                    <h3><i class="fas fa-map-marker-alt"></i> Ecopontos em Franca</h3>
+                    <p>Encontre o <a href="ecopontos.html#ecopontos-map">Ecoponto</a> mais próximo de você e saiba quais materiais são aceitos em cada local.</p>
+                    <a href="ecopontos.html" class="feature-link">Saiba mais</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="footer-bottom">
+            <p>&copy; 2025 Guia de Reciclagem para Franca-SP. Todos os direitos reservados.</p>
+            <p>Desenvolvido com <i class="fas fa-heart"></i> para promover a sustentabilidade em nossa cidade.</p>
+        </div>
+    </footer>
+
+    <button id="backToTopBtn" aria-label="Voltar ao topo"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navList = document.getElementById('nav-list');
+
+            mobileMenu.addEventListener('click', () => {
+                navList.classList.toggle('active');
+                mobileMenu.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
